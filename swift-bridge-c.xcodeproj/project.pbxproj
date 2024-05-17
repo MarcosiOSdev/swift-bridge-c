@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE1934A42BEAB665006E6BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934A32BEAB665006E6BD6 /* AppDelegate.swift */; };
+		EE1934A62BEAB665006E6BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934A52BEAB665006E6BD6 /* SceneDelegate.swift */; };
+		EE1934A82BEAB665006E6BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934A72BEAB665006E6BD6 /* ViewController.swift */; };
+		EE1934AB2BEAB665006E6BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1934A92BEAB665006E6BD6 /* Main.storyboard */; };
+		EE1934AD2BEAB666006E6BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1934AC2BEAB666006E6BD6 /* Assets.xcassets */; };
+		EE1934B02BEAB666006E6BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1934AE2BEAB666006E6BD6 /* LaunchScreen.storyboard */; };
+		EE1934BB2BEAB667006E6BD6 /* swift_bridge_cTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934BA2BEAB667006E6BD6 /* swift_bridge_cTests.swift */; };
+		EE1934C52BEAB667006E6BD6 /* swift_bridge_cUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934C42BEAB667006E6BD6 /* swift_bridge_cUITests.swift */; };
+		EE1934C72BEAB667006E6BD6 /* swift_bridge_cUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1934C62BEAB667006E6BD6 /* swift_bridge_cUITestsLaunchTests.swift */; };
+		EE1934E92BEABE2B006E6BD6 /* C.c in Sources */ = {isa = PBXBuildFile; fileRef = EE1934E82BEABE2B006E6BD6 /* C.c */; };
+		EE1934ED2BEABE90006E6BD6 /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE1934EB2BEABE90006E6BD6 /* CPP.cpp */; };
+		EE1934F02BEABEE1006E6BD6 /* CPP-Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE1934EF2BEABEE1006E6BD6 /* CPP-Wrapper.mm */; };
+		EE1934F32BEABF28006E6BD6 /* Objective-C.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1934F22BEABF28006E6BD6 /* Objective-C.m */; };
+		EE1934F52BEABF5D006E6BD6 /* Objective-CPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE1934F42BEABF5D006E6BD6 /* Objective-CPP.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE1934B72BEAB667006E6BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE1934982BEAB665006E6BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE19349F2BEAB665006E6BD6;
+			remoteInfo = "swift-bridge-c";
+		};
+		EE1934C12BEAB667006E6BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE1934982BEAB665006E6BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE19349F2BEAB665006E6BD6;
+			remoteInfo = "swift-bridge-c";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE1934A02BEAB665006E6BD6 /* swift-bridge-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-bridge-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1934A32BEAB665006E6BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE1934A52BEAB665006E6BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE1934A72BEAB665006E6BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE1934AA2BEAB665006E6BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE1934AC2BEAB666006E6BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE1934AF2BEAB666006E6BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE1934B12BEAB666006E6BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1934B62BEAB667006E6BD6 /* swift-bridge-cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-bridge-cTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1934BA2BEAB667006E6BD6 /* swift_bridge_cTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridge_cTests.swift; sourceTree = "<group>"; };
+		EE1934C02BEAB667006E6BD6 /* swift-bridge-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-bridge-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1934C42BEAB667006E6BD6 /* swift_bridge_cUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridge_cUITests.swift; sourceTree = "<group>"; };
+		EE1934C62BEAB667006E6BD6 /* swift_bridge_cUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridge_cUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE1934E72BEABE2B006E6BD6 /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		EE1934E82BEABE2B006E6BD6 /* C.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = C.c; sourceTree = "<group>"; };
+		EE1934EB2BEABE90006E6BD6 /* CPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPP.cpp; sourceTree = "<group>"; };
+		EE1934EC2BEABE90006E6BD6 /* CPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPP.hpp; sourceTree = "<group>"; };
+		EE1934EE2BEABED7006E6BD6 /* CPP-Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPP-Wrapper.h"; sourceTree = "<group>"; };
+		EE1934EF2BEABEE1006E6BD6 /* CPP-Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "CPP-Wrapper.mm"; sourceTree = "<group>"; };
+		EE1934F12BEABF21006E6BD6 /* Objective-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C.h"; sourceTree = "<group>"; };
+		EE1934F22BEABF28006E6BD6 /* Objective-C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective-C.m"; sourceTree = "<group>"; };
+		EE1934F42BEABF5D006E6BD6 /* Objective-CPP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "Objective-CPP.mm"; sourceTree = "<group>"; };
+		EE1934F62BEABF64006E6BD6 /* Objective-CPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CPP.h"; sourceTree = "<group>"; };
+		EE1934F72BEABFA5006E6BD6 /* swift-bridge-c-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-bridge-c-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE19349D2BEAB665006E6BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934B32BEAB667006E6BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934BD2BEAB667006E6BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE1934972BEAB665006E6BD6 = {
+			isa = PBXGroup;
+			children = (
+				EE1934A22BEAB665006E6BD6 /* swift-bridge-c */,
+				EE1934B92BEAB667006E6BD6 /* swift-bridge-cTests */,
+				EE1934C32BEAB667006E6BD6 /* swift-bridge-cUITests */,
+				EE1934A12BEAB665006E6BD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE1934A12BEAB665006E6BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934A02BEAB665006E6BD6 /* swift-bridge-c.app */,
+				EE1934B62BEAB667006E6BD6 /* swift-bridge-cTests.xctest */,
+				EE1934C02BEAB667006E6BD6 /* swift-bridge-cUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE1934A22BEAB665006E6BD6 /* swift-bridge-c */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934EA2BEABE85006E6BD6 /* CPlusPlus */,
+				EE1934E62BEABE1B006E6BD6 /* C */,
+				EE1934D32BEAB673006E6BD6 /* Objective-C */,
+				EE1934A32BEAB665006E6BD6 /* AppDelegate.swift */,
+				EE1934A52BEAB665006E6BD6 /* SceneDelegate.swift */,
+				EE1934A72BEAB665006E6BD6 /* ViewController.swift */,
+				EE1934A92BEAB665006E6BD6 /* Main.storyboard */,
+				EE1934AC2BEAB666006E6BD6 /* Assets.xcassets */,
+				EE1934AE2BEAB666006E6BD6 /* LaunchScreen.storyboard */,
+				EE1934B12BEAB666006E6BD6 /* Info.plist */,
+			);
+			path = "swift-bridge-c";
+			sourceTree = "<group>";
+		};
+		EE1934B92BEAB667006E6BD6 /* swift-bridge-cTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934BA2BEAB667006E6BD6 /* swift_bridge_cTests.swift */,
+			);
+			path = "swift-bridge-cTests";
+			sourceTree = "<group>";
+		};
+		EE1934C32BEAB667006E6BD6 /* swift-bridge-cUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934C42BEAB667006E6BD6 /* swift_bridge_cUITests.swift */,
+				EE1934C62BEAB667006E6BD6 /* swift_bridge_cUITestsLaunchTests.swift */,
+			);
+			path = "swift-bridge-cUITests";
+			sourceTree = "<group>";
+		};
+		EE1934D32BEAB673006E6BD6 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934F72BEABFA5006E6BD6 /* swift-bridge-c-Bridging-Header.h */,
+				EE1934EE2BEABED7006E6BD6 /* CPP-Wrapper.h */,
+				EE1934EF2BEABEE1006E6BD6 /* CPP-Wrapper.mm */,
+				EE1934F12BEABF21006E6BD6 /* Objective-C.h */,
+				EE1934F22BEABF28006E6BD6 /* Objective-C.m */,
+				EE1934F42BEABF5D006E6BD6 /* Objective-CPP.mm */,
+				EE1934F62BEABF64006E6BD6 /* Objective-CPP.h */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		EE1934E62BEABE1B006E6BD6 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934E72BEABE2B006E6BD6 /* C.h */,
+				EE1934E82BEABE2B006E6BD6 /* C.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EE1934EA2BEABE85006E6BD6 /* CPlusPlus */ = {
+			isa = PBXGroup;
+			children = (
+				EE1934EB2BEABE90006E6BD6 /* CPP.cpp */,
+				EE1934EC2BEABE90006E6BD6 /* CPP.hpp */,
+			);
+			path = CPlusPlus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE19349F2BEAB665006E6BD6 /* swift-bridge-c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE1934CA2BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-c" */;
+			buildPhases = (
+				EE19349C2BEAB665006E6BD6 /* Sources */,
+				EE19349D2BEAB665006E6BD6 /* Frameworks */,
+				EE19349E2BEAB665006E6BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-bridge-c";
+			productName = "swift-bridge-c";
+			productReference = EE1934A02BEAB665006E6BD6 /* swift-bridge-c.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE1934B52BEAB667006E6BD6 /* swift-bridge-cTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE1934CD2BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-cTests" */;
+			buildPhases = (
+				EE1934B22BEAB667006E6BD6 /* Sources */,
+				EE1934B32BEAB667006E6BD6 /* Frameworks */,
+				EE1934B42BEAB667006E6BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE1934B82BEAB667006E6BD6 /* PBXTargetDependency */,
+			);
+			name = "swift-bridge-cTests";
+			productName = "swift-bridge-cTests";
+			productReference = EE1934B62BEAB667006E6BD6 /* swift-bridge-cTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE1934BF2BEAB667006E6BD6 /* swift-bridge-cUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE1934D02BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-cUITests" */;
+			buildPhases = (
+				EE1934BC2BEAB667006E6BD6 /* Sources */,
+				EE1934BD2BEAB667006E6BD6 /* Frameworks */,
+				EE1934BE2BEAB667006E6BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE1934C22BEAB667006E6BD6 /* PBXTargetDependency */,
+			);
+			name = "swift-bridge-cUITests";
+			productName = "swift-bridge-cUITests";
+			productReference = EE1934C02BEAB667006E6BD6 /* swift-bridge-cUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE1934982BEAB665006E6BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EE19349F2BEAB665006E6BD6 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					EE1934B52BEAB667006E6BD6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EE19349F2BEAB665006E6BD6;
+					};
+					EE1934BF2BEAB667006E6BD6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EE19349F2BEAB665006E6BD6;
+					};
+				};
+			};
+			buildConfigurationList = EE19349B2BEAB665006E6BD6 /* Build configuration list for PBXProject "swift-bridge-c" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE1934972BEAB665006E6BD6;
+			productRefGroup = EE1934A12BEAB665006E6BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE19349F2BEAB665006E6BD6 /* swift-bridge-c */,
+				EE1934B52BEAB667006E6BD6 /* swift-bridge-cTests */,
+				EE1934BF2BEAB667006E6BD6 /* swift-bridge-cUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE19349E2BEAB665006E6BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1934B02BEAB666006E6BD6 /* LaunchScreen.storyboard in Resources */,
+				EE1934AD2BEAB666006E6BD6 /* Assets.xcassets in Resources */,
+				EE1934AB2BEAB665006E6BD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934B42BEAB667006E6BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934BE2BEAB667006E6BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE19349C2BEAB665006E6BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1934F52BEABF5D006E6BD6 /* Objective-CPP.mm in Sources */,
+				EE1934A82BEAB665006E6BD6 /* ViewController.swift in Sources */,
+				EE1934ED2BEABE90006E6BD6 /* CPP.cpp in Sources */,
+				EE1934F32BEABF28006E6BD6 /* Objective-C.m in Sources */,
+				EE1934A42BEAB665006E6BD6 /* AppDelegate.swift in Sources */,
+				EE1934E92BEABE2B006E6BD6 /* C.c in Sources */,
+				EE1934A62BEAB665006E6BD6 /* SceneDelegate.swift in Sources */,
+				EE1934F02BEABEE1006E6BD6 /* CPP-Wrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934B22BEAB667006E6BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1934BB2BEAB667006E6BD6 /* swift_bridge_cTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1934BC2BEAB667006E6BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1934C52BEAB667006E6BD6 /* swift_bridge_cUITests.swift in Sources */,
+				EE1934C72BEAB667006E6BD6 /* swift_bridge_cUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE1934B82BEAB667006E6BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE19349F2BEAB665006E6BD6 /* swift-bridge-c */;
+			targetProxy = EE1934B72BEAB667006E6BD6 /* PBXContainerItemProxy */;
+		};
+		EE1934C22BEAB667006E6BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE19349F2BEAB665006E6BD6 /* swift-bridge-c */;
+			targetProxy = EE1934C12BEAB667006E6BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE1934A92BEAB665006E6BD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE1934AA2BEAB665006E6BD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE1934AE2BEAB666006E6BD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE1934AF2BEAB666006E6BD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE1934C82BEAB667006E6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE1934C92BEAB667006E6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE1934CB2BEAB667006E6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-bridge-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-bridge-c/Objective-C/swift-bridge-c-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE1934CC2BEAB667006E6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-bridge-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-bridge-c/Objective-C/swift-bridge-c-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE1934CE2BEAB667006E6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-bridge-c.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift-bridge-c";
+			};
+			name = Debug;
+		};
+		EE1934CF2BEAB667006E6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-bridge-c.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift-bridge-c";
+			};
+			name = Release;
+		};
+		EE1934D12BEAB667006E6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-bridge-c";
+			};
+			name = Debug;
+		};
+		EE1934D22BEAB667006E6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK72TU5FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mfelipesp.swift-bridge-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-bridge-c";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE19349B2BEAB665006E6BD6 /* Build configuration list for PBXProject "swift-bridge-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1934C82BEAB667006E6BD6 /* Debug */,
+				EE1934C92BEAB667006E6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1934CA2BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1934CB2BEAB667006E6BD6 /* Debug */,
+				EE1934CC2BEAB667006E6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1934CD2BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-cTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1934CE2BEAB667006E6BD6 /* Debug */,
+				EE1934CF2BEAB667006E6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1934D02BEAB667006E6BD6 /* Build configuration list for PBXNativeTarget "swift-bridge-cUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1934D12BEAB667006E6BD6 /* Debug */,
+				EE1934D22BEAB667006E6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE1934982BEAB665006E6BD6 /* Project object */;
+}
